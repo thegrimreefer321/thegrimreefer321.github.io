@@ -188,40 +188,4 @@ footer{
 }
 
 /*DESKTOP RESOLUTIONS*/
-@media (min-width: 1366px) and (min-height: 768px){
-	
-	h1{
-		font-size: 70px;
-		color:#ccc;
-		opacity: 1;
-		font-family: 'Pacifico', cursive;
-	}
-	#inputWrapper{
-		display: block;
-	}
-	#textInput{
-		display: block;
-		width:98%;
-		padding:10px;
-		font-size: 30px;
-	}
-	button{
-		height:89px;
-		font-size: 30px;
-	}
-	header button{
-		width: 80%;
-		
-	}
-	#contents button{
-		width: 30%;
-	}
-	span{
-		font-size: 50px;
-		width:67%;
-		word-wrap: break-word;
-	}
-	footer span{
-		font-size: 30px;
-	}
-}
+

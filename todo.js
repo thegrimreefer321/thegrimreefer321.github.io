@@ -4,6 +4,10 @@ let completed = document.querySelectorAll(".complete");
 let textBox = document.querySelector("#textInput");
 let contents = document.querySelector("#contents");
 
+//check if list is empty
+
+/**
+
 let emptyCheck = function(){
 	if(list.childElementCount == 0){
 		let empty = document.createElement("h2");
@@ -15,7 +19,8 @@ let emptyCheck = function(){
 	}
 }
 
-//emptyCheck();
+**/
+
 
 adder.onclick = function(){
 	if(document.getElementById("textInput").value == ""){
