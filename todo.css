@@ -1,0 +1,119 @@
+*{
+	margin:0px;
+	padding:0px;
+	outline:none;
+	font-size: 30px;
+}
+body{
+	background:url("https://www.setaswall.com/wp-content/uploads/2017/10/Colorful-Sky-Wallpaper-720x1280.jpg") no-repeat;
+	background-size:cover;
+	animation: load 1s;
+	height: 100vh;
+	width: 100vw;
+	overflow-y: hidden;
+	font-family: 'Lato', sans-serif;
+}
+h1{
+	font-size: 100px;
+	color:#ccc;
+	opacity: 1;
+	font-family: 'Pacifico', cursive;
+}
+#wrapper{
+	margin:25px 50px;
+	text-align: center;
+}
+#inputWrapper{
+	display: flex;
+	justify-content: space-between;
+	padding:0px 20px;
+}
+header{
+	border-radius: 10px;
+	background:rgba(30, 33, 45, 0.7);
+	padding:30px 20px;
+}
+#textInput{
+	width:80%;
+	padding:15px;
+
+}
+#contents{
+	background: rgba(30, 33, 45, 0.7);
+	border-radius: 10px;
+	height: auto;
+	transition: height 1s;
+
+}
+ul{
+	margin: 10px 50px;
+	padding: 20px 0px;
+	list-style-type: none;
+	text-align: left;
+	height: auto;
+	transition: height 1s;
+
+}
+li{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px;
+	animation:load 1s;
+}
+span{
+	background: white;
+	border-radius: 5px;
+	padding: 5px;
+	width:75%;
+	word-wrap: break-word;
+}
+
+/* GENERAL BUTTON and TEXTBOX*/
+header button{
+	width:100px;
+}
+#contents button{
+	width:20%;
+}
+button{
+	height: 60px;
+	background: #709fb0;
+	color: white;
+	border-radius: 8px;
+	outline:none;
+	transition: background 0.5s;
+	transition: color 0.3s;
+}
+button:hover{
+	color:#66F;
+	background:white;
+}
+#textInput{
+	height: 25px;
+}
+
+.unload{
+	animation: unload 1s;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+}
+@keyframes load{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@keyframes unload{
+	from{
+		opacity:1;
+	}
+	to{
+		opacity:0;
+	}
+}
+/* RGB */
