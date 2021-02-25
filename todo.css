@@ -45,6 +45,11 @@ header{
 	transition: height 1s;
 
 }
+h2{
+	color:#ccc;
+	margin:20px auto;
+	font-size: 60px;
+}
 ul{
 	margin: 10px 50px;
 	padding: 20px 0px;
@@ -116,7 +121,40 @@ footer{
 		opacity:0;
 	}
 }
-/* RGB */
+/* ALL 1080 */
+@media(min-width: 1080px){
+	h1{
+		font-size: 135px;
+		color:#ccc;
+		opacity: 1;
+		font-family: 'Pacifico', cursive;
+	}
+	#textInput{
+		width:75%;
+		padding:30px;
+		font-size: 50px;
+	}
+	button{
+		height:89px;
+		font-size: 50px;
+	}
+	header button{
+		width: 150px;
+		
+	}
+	#contents button{
+		width: 30%;
+	}
+	span{
+		font-size: 50px;
+		width:67%;
+		word-wrap: break-word;
+	}
+	footer span{
+		font-size: 30px;
+	}
+}
+
 
 /* SAMSUNG S9+ 1440x2960*/
 @media (min-width: 1440px){
@@ -146,5 +184,44 @@ footer{
 		font-size: 60px;
 		width:67%;
 		word-wrap: break-word;
+	}
+}
+
+/*DESKTOP RESOLUTIONS*/
+@media (min-width: 1366px) and (min-height: 768px){
+	
+	h1{
+		font-size: 70px;
+		color:#ccc;
+		opacity: 1;
+		font-family: 'Pacifico', cursive;
+	}
+	#inputWrapper{
+		display: block;
+	}
+	#textInput{
+		display: block;
+		width:98%;
+		padding:10px;
+		font-size: 30px;
+	}
+	button{
+		height:89px;
+		font-size: 30px;
+	}
+	header button{
+		width: 80%;
+		
+	}
+	#contents button{
+		width: 30%;
+	}
+	span{
+		font-size: 50px;
+		width:67%;
+		word-wrap: break-word;
+	}
+	footer span{
+		font-size: 30px;
 	}
 }

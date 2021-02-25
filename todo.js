@@ -2,6 +2,20 @@ let adder = document.getElementById("add");
 let list = document.getElementById("list");
 let completed = document.querySelectorAll(".complete");
 let textBox = document.querySelector("#textInput");
+let contents = document.querySelector("#contents");
+
+let emptyCheck = function(){
+	if(list.childElementCount == 0){
+		let empty = document.createElement("h2");
+		empty.innerHTML = "You have nothing to do."
+		contents.appendChild(empty);
+	}else if(list.childElementCount > 0){
+		let removeEmpty = document.getElementsByTagName("h2")[0];
+		removeEmpty.remove();
+	}
+}
+
+//emptyCheck();
 
 adder.onclick = function(){
 	if(document.getElementById("textInput").value == ""){
@@ -19,6 +33,7 @@ adder.onclick = function(){
 		list.appendChild(todoLine);
 		//reset
 		textBox.value = "";
+
 		//update complete button
 		completed = document.querySelectorAll(".complete");
 		for(let x = 0;x < completed.length;x++){
@@ -29,6 +44,7 @@ adder.onclick = function(){
 			})
 		}
 
+
 	}
 
 }
@@ -37,8 +53,4 @@ textBox.addEventListener("keyup", function(event){
 		adder.click();	
 	}
 })
-if(list.childElementCount == 0){
 
-}else if(list.childElementCount > 0){
-	
-}
